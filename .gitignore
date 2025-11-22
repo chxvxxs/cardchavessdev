@@ -1,0 +1,23 @@
+# Dependencias
+/node_modules
+/.pnp
+.pnp.js
+
+# Produção e Build
+/.next/
+/out/
+/build
+/dist
+
+# Arquivos de Ambiente (Segurança!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs e Sistema
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
