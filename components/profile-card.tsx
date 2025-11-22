@@ -52,15 +52,6 @@ export function ProfileCard() {
             <Badge icon={<Server size={14} />} label="Node.js" />
           </div>
 
-          {/* Área "Songs" (Ajustada para não quebrar o layout) */}
-          <div className="flex items-center gap-2">
-             <MiniButton 
-               href="https://open.spotify.com/user/31fx2astdw7jq2hqlhbhs763qiba?si=c9aeb7415a594d77" 
-               icon={<Music size={14} />} 
-               label="My Playlist" 
-             />
-          </div>
-
           {/* Botões de Ação */}
           <div className="flex w-full flex-col gap-3 pt-2">
             <ActionButton 
@@ -98,19 +89,7 @@ function Badge({ icon, label }: { icon: React.ReactNode; label: string }) {
   )
 }
 
-// Badge clicável para o Spotify (Substitui o visualizador de Views)
-function MiniButton({ href, icon, label }: { href: string; icon: React.ReactNode; label: string }) {
-    return (
-      <Link
-        href={href}
-        target="_blank"
-        className="flex items-center gap-2 rounded-full bg-black/50 px-4 py-1.5 text-xs font-medium text-zinc-400 ring-1 ring-white/10 transition-all hover:bg-green-500/10 hover:text-green-400 hover:ring-green-500/50"
-      >
-        {icon}
-        <span>{label}</span>
-      </Link>
-    )
-  }
+
 
 // Botão Principal (Com suporte a target="_blank")
 interface ActionButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
