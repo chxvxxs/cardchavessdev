@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Coffee, Bot, Server, Github, ExternalLink, Music, Code2, Instagram } from "lucide-react"
+import { Coffee, Bot, Server, Github, ExternalLink, Music, Code2, Instagram, Code, Cpu } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -23,13 +23,13 @@ export function ProfileCard() {
           {/* Imagem de Perfil */}
           <div className="relative">
             <div className="absolute -inset-2 animate-pulse rounded-full bg-white/20 blur-md" />
-            <div className="relative h-32 w-32 rounded-full border-1 border-white/10 p-0.2 bg-white">
+            <div className="relative h-40 w-40 rounded-full border-0 border-white/10 p-0.2 bg-transparent">
               <div className="h-full w-full overflow-hidden rounded-full">
                 <Image
-                  src="/killu.jpg" 
+                  src="/CHAVES.svg" 
                   alt="Profile"
-                  width={128}
-                  height={128}
+                  width={180}
+                  height={180}
                   className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
@@ -39,16 +39,19 @@ export function ProfileCard() {
           {/* Info do Usuário */}
           <div className="text-center space-y-1">
             <h1 className="bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-3xl font-bold text-transparent">
-              Chaves
+              Matheus Chaves
             </h1>
-            <p className="text-zinc-400 text-sm font-medium tracking-wide">@chavessdev</p>
+            <p className="text-zinc-400 text-sm font-medium tracking-wide">@chavesslife</p>
+            <p className="text-zinc-400 text-sm font-medium tracking-wide">Backend Developer</p>
           </div>
 
           {/* Badges de Tech */}
           <div className="flex flex-wrap justify-center gap-2">
             <Badge icon={<Coffee size={14} />} label="Java" />
+            <Badge icon={<Code size={14} />} label="Spring-Boot" />
             <Badge icon={<Code2 size={14} />} label="Back-End" />
-            <Badge icon={<Bot size={14} />} label="Discord Bot" />
+            <Badge icon={<Cpu size={14} />} label="Python" />
+            <Badge icon={<Bot size={14} />} label="AI/ML" />
             <Badge icon={<Server size={14} />} label="Node.js" />
           </div>
 
@@ -60,7 +63,7 @@ export function ProfileCard() {
               label="Meu Portfólio" 
             />
             <ActionButton 
-              href="https://www.instagram.com/chavessdev/" 
+              href="https://www.instagram.com/chavesslife/" 
               icon={<Instagram size={18} />} 
               label="Instagram" 
               target="_blank"
