@@ -83,16 +83,16 @@ function TechRain() {
 
         // Gradient for the trail
         const gradient = ctx.createLinearGradient(x, y, x, y + stream.length)
-        gradient.addColorStop(0, "rgba(255, 255, 255, 0)")
-        gradient.addColorStop(1, `rgba(255, 255, 255, ${stream.opacity})`)
+        gradient.addColorStop(0, "rgba(104, 0, 124, 1)")
+        gradient.addColorStop(1, `rgba(182, 0, 255, ${stream.opacity})`)
 
         ctx.fillStyle = gradient
         ctx.fillRect(x, y, 2 * stream.depth, stream.length) // Width scales with depth
 
         // Glowing "head" of the stream
         ctx.shadowBlur = 5
-        ctx.shadowColor = "rgba(255, 255, 255, 0.5)"
-        ctx.fillStyle = `rgba(255, 255, 255, ${stream.opacity * 1.5})`
+        ctx.shadowColor = "rgba(255, 0, 255, 0.74)"
+        ctx.fillStyle = `rgba(182, 0, 255, ${stream.opacity * 1.5})`
         ctx.fillRect(x, y + stream.length, 2 * stream.depth, 5)
         ctx.shadowBlur = 0
       })

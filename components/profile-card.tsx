@@ -15,18 +15,18 @@ export function ProfileCard() {
       className="w-full max-w-md relative z-10"
     >
       <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/60 p-6 backdrop-blur-xl transition-all hover:border-white/20 shadow-2xl">
-        
+
         {/* Efeito de Glow interno (Mantido discreto para combinar com seu fundo) */}
         <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-black-600/50 acity-10 blur-xl transition-opacity duration-500 group-hover:opacity-20" />
 
         <div className="relative z-10 flex flex-col items-center gap-6">
           {/* Imagem de Perfil */}
           <div className="relative">
-            <div className="absolute -inset-2 animate-pulse rounded-full bg-white/20 blur-md" />
+            <div className="absolute -inset-2 animate-pulse rounded-full bg-white/20 blur-xl" />
             <div className="relative h-40 w-40 rounded-full border-0 border-white/10 p-0.2 bg-transparent">
               <div className="h-full w-full overflow-hidden rounded-full">
                 <Image
-                  src="/CHAVES.svg" 
+                  src="/CHAVES.svg"
                   alt="Profile"
                   width={180}
                   height={180}
@@ -41,37 +41,37 @@ export function ProfileCard() {
             <h1 className="bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-3xl font-bold text-transparent">
               Matheus Chaves
             </h1>
-            <p className="text-zinc-400 text-sm font-medium tracking-wide">@chavesslife</p>
-            <p className="text-zinc-400 text-sm font-medium tracking-wide">Backend Developer</p>
+            <p className="text-zinc-400 text-sm font-medium tracking-wide">@chavescreator</p>
+            <p className="text-zinc-400 text-sm font-medium tracking-wide">Full-Stack Developer & Entusiasta de Cibersegurança</p>
           </div>
 
           {/* Badges de Tech */}
           <div className="flex flex-wrap justify-center gap-2">
             <Badge icon={<Coffee size={14} />} label="Java" />
             <Badge icon={<Code size={14} />} label="Spring-Boot" />
-            <Badge icon={<Code2 size={14} />} label="Back-End" />
-            <Badge icon={<Cpu size={14} />} label="Python" />
-            <Badge icon={<Bot size={14} />} label="AI/ML" />
+            <Badge icon={<Code2 size={14} />} label="React.Js" />
+            <Badge icon={<Cpu size={14} />} label="Next.Js" />
+            <Badge icon={<Bot size={14} />} label="Agentes de I.A" />
             <Badge icon={<Server size={14} />} label="Node.js" />
           </div>
 
           {/* Botões de Ação */}
           <div className="flex w-full flex-col gap-3 pt-2">
-            <ActionButton 
-              href="https://chavessdev.vercel.app/" 
-              icon={<ExternalLink size={18} />} 
-              label="Meu Portfólio" 
+            <ActionButton
+              href="https://chavessdev.vercel.app/"
+              icon={<ExternalLink size={18} />}
+              label="Meu Portfólio"
             />
-            <ActionButton 
-              href="https://www.instagram.com/chavesslife/" 
-              icon={<Instagram size={18} />} 
-              label="Instagram" 
+            <ActionButton
+              href="https://www.instagram.com/chavescreator/"
+              icon={<Instagram size={18} />}
+              label="Instagram"
               target="_blank"
             />
-            <ActionButton 
-              href="https://github.com/chxvxxs" 
-              icon={<Github size={18} />} 
-              label="GitHub" 
+            <ActionButton
+              href="https://github.com/chxvxxs"
+              icon={<Github size={18} />}
+              label="GitHub"
               target="_blank"
             />
           </div>
@@ -96,9 +96,9 @@ function Badge({ icon, label }: { icon: React.ReactNode; label: string }) {
 
 // Botão Principal (Com suporte a target="_blank")
 interface ActionButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-    href: string;
-    icon: React.ReactNode;
-    label: string;
+  href: string;
+  icon: React.ReactNode;
+  label: string;
 }
 
 function ActionButton({ href, icon, label, ...props }: ActionButtonProps) {
@@ -106,7 +106,7 @@ function ActionButton({ href, icon, label, ...props }: ActionButtonProps) {
     <Link
       href={href}
       {...props}
-      className="group relative flex w-full items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3.5 text-sm font-semibold text-white transition-all hover:bg-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-[0.98]"
+      className="group relative flex w-full items-center justify-center gap-2 rounded-xl bg-white/5 px-4 py-3.5 text-sm font-semibold text-white transition-all hover:bg-purple-500/20 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-[1.02] active:scale-[0.98]"
     >
       <span className="relative z-10 flex items-center gap-2">
         {icon}
