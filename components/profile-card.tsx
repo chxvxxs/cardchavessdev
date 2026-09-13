@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Coffee, Bot, Server, Github, ExternalLink, Music, Code2, Instagram, Code, Cpu } from "lucide-react"
+import { Coffee, Bot, Server, Github, ExternalLink, Music, Code2, Instagram, Code, Cpu, Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -41,7 +41,7 @@ export function ProfileCard() {
             <h1 className="bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-3xl font-bold text-transparent">
               Matheus Chaves
             </h1>
-            <p className="text-zinc-400 text-sm font-medium tracking-wide">@chavescreator</p>
+            <p className="text-zinc-400 text-sm font-medium tracking-wide">Recife-PE</p>
             <p className="text-zinc-400 text-sm font-medium tracking-wide">Full-Stack Developer & Entusiasta de Cibersegurança</p>
           </div>
 
@@ -50,7 +50,7 @@ export function ProfileCard() {
             <Badge icon={<Coffee size={14} />} label="Java" />
             <Badge icon={<Code size={14} />} label="Spring-Boot" />
             <Badge icon={<Code2 size={14} />} label="React.Js" />
-            <Badge icon={<Cpu size={14} />} label="Next.Js" />
+            <Badge icon={<Cpu size={14} />} label="Python" />
             <Badge icon={<Bot size={14} />} label="Agentes de I.A" />
             <Badge icon={<Server size={14} />} label="Node.js" />
           </div>
@@ -63,9 +63,9 @@ export function ProfileCard() {
               label="Meu Portfólio"
             />
             <ActionButton
-              href="https://www.instagram.com/chavescreator/"
-              icon={<Instagram size={18} />}
-              label="Instagram"
+              href="https://www.linkedin.com/in/matheus-chaves-75844b288/"
+              icon={<Linkedin size={18} />}
+              label="LinkedIn"
               target="_blank"
             />
             <ActionButton
