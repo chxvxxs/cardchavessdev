@@ -63,7 +63,7 @@ export function ProfileCard() {
               label="Meu Portfólio"
             />
             <ActionButton
-              href="https://www.linkedin.com/in/matheus-chaves-75844b288/"
+              href="https://www.linkedin.com/in/matheuschavesdev/"
               icon={<Linkedin size={18} />}
               label="LinkedIn"
               target="_blank"
