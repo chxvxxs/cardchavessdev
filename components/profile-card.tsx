@@ -22,7 +22,7 @@ export function ProfileCard() {
         <div className="relative z-10 flex flex-col items-center gap-6">
           {/* Imagem de Perfil */}
           <div className="relative">
-            <div className="absolute -inset-2 animate-pulse rounded-full bg-white/20 blur-xl" />
+            <div className="absolute -inset-2 animate-pulse rounded-full bg-[#5600BF]/30 blur-xl" />
             <div className="relative h-40 w-40 rounded-full border-0 border-white/10 p-0.2 bg-transparent">
               <div className="h-full w-full overflow-hidden rounded-full">
                 <Image
